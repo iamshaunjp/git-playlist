@@ -1,5 +1,6 @@
 
 console.log('do your worst');
+console.log( 'first! great tutorial!' );
 
 function Track(song, artist, album, year){
   this.song = song;
@@ -25,3 +26,9 @@ Tracks.map(track => {
   console.log("\nAlbum: " + track.album + ", Year: " + track.year);
   console.log("----------------------");
 });
+
+// Ninjas are cool!
+
+console.log('%cDo your worst!\n', 'background: red; color: white; display: block; padding: 3px;');
+console.log('%cFork it on GitHub: https://github.com/iamshaunjp/git-playlist.git', 'background: #0057A0; color: white; display: block; padding: 3px;');
+
