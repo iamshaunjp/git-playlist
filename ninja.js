@@ -1,6 +1,7 @@
 
 console.log('do your worst');
 console.log( 'first! great tutorial!' );
+console.log( "I'll be a hardcore programmer!!! Thanks Shaun! From PeterAMD" );
 
 function Track(song, artist, album, year){
   this.song = song;
