@@ -2,7 +2,7 @@
 console.log('do your worst');
 console.log( 'first! great tutorial!' );
 console.log( "I'll be a hardcore programmer!!! Thanks Shaun! From PeterAMD" );
-
+console.log("Amazing tutorial! Love from Turkey,AnılSansak was here");
 function Track(song, artist, album, year){
   this.song = song;
   this. artist = artist;
@@ -32,4 +32,3 @@ Tracks.map(track => {
 
 console.log('%cDo your worst!\n', 'background: red; color: white; display: block; padding: 3px;');
 console.log('%cFork it on GitHub: https://github.com/iamshaunjp/git-playlist.git', 'background: #0057A0; color: white; display: block; padding: 3px;');
-
