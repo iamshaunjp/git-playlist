@@ -2,6 +2,7 @@
 console.log('do your worst');
 console.log( 'first! great tutorial!' );
 console.log( "I'll be a hardcore programmer!!! Thanks Shaun! From PeterAMD" );
+console.log('Indeed. Great tutorial as always! Thanks Shaun, from Pieter.');
 
 function Track(song, artist, album, year){
   this.song = song;
@@ -10,14 +11,18 @@ function Track(song, artist, album, year){
   this.year = year;
 }
 
+// Just add your favorite track of all time to the list
+
 const track1 = new Track("Redbone", "Childish Gambino", "Awaken, My Love!", "2017");
 const track2 = new Track("Do I Wanna Know", "Arctic Monkeys", "AM", "2013");
 const track3 = new Track("The Less I Know The Better", "Tame Impala", "Currents", "2015");
+const track4 = new Track("Blue Monday", "New Order", "NOT ON Power, Corruption & Lies", "1983");
 
 const Tracks = [
   track1,
   track2,
-  track3
+  track3,
+  track4
 ];
 
 Tracks.map(track => {
