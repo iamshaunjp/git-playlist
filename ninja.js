@@ -3,6 +3,7 @@ console.log('do your worst');
 console.log( 'first! great tutorial!' );
 console.log( "I'll be a hardcore programmer!!! Thanks Shaun! From PeterAMD" );
 console.log('Indeed. Great tutorial as always! Thanks Shaun, from Pieter.');
+console.log("Thanks for NetNinja's tutorials! Thanks from BaalWu in Taiwan");
 
 function Track(song, artist, album, year){
   this.song = song;
@@ -37,4 +38,3 @@ Tracks.map(track => {
 
 console.log('%cDo your worst!\n', 'background: red; color: white; display: block; padding: 3px;');
 console.log('%cFork it on GitHub: https://github.com/iamshaunjp/git-playlist.git', 'background: #0057A0; color: white; display: block; padding: 3px;');
-
