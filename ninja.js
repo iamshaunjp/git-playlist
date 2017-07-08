@@ -4,7 +4,7 @@ console.log( 'first! great tutorial!' );
 console.log( "I'll be a hardcore programmer!!! Thanks Shaun! From PeterAMD" );
 console.log('Indeed. Great tutorial as always! Thanks Shaun, from Pieter.');
 console.log("Thanks for NetNinja's tutorials! Thanks from BaalWu in Taiwan");
-
+var x =0;
 function Track(song, artist, album, year){
   this.song = song;
   this. artist = artist;
