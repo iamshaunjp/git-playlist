@@ -23,3 +23,9 @@ h3{
 h1{
   color: red;
 }
+
+.grad {
+	height: 500px;
+	width: 100%;
+	background: linear-gradient(to right, red, orange, green, cyan, blue, indigo, violet);
+}
