@@ -8,6 +8,7 @@ console.log("Thanks for NetNinja's tutorials! Thanks from BaalWu in Taiwan");
 console.log("Thanks Shaun for the tutorials - Navaneeth")
 console.log("I want to say thank you to all my fans! JK")
 console.log("Very good videos. Good job! :) ~Christoph")
+console.log("The net ninjs, Shaun, the best shinobi, woo");
 
 function Track(song, artist, album, year){
   this.song = song;
