@@ -9,20 +9,22 @@ console.log("Thanks Shaun for the tutorials - Navaneeth")
 console.log("I want to say thank you to all my fans! JK")
 console.log("Very good videos. Good job! :) ~Christoph")
 console.log("The net ninjs, Shaun, the best shinobi, woo");
+console.log("What's up guys, this is my first pull request! Thanks Shaun!");
 
-function Track(song, artist, album, year){
+function Track(song, artist, album, year, starReview){
   this.song = song;
   this. artist = artist;
   this.album = album;
   this.year = year;
+  this.starReview = starReview;
 }
 
 // Just add your favorite track of all time to the list
 
-const track1 = new Track("Redbone", "Childish Gambino", "Awaken, My Love!", "2017");
-const track2 = new Track("Do I Wanna Know", "Arctic Monkeys", "AM", "2013");
-const track3 = new Track("The Less I Know The Better", "Tame Impala", "Currents", "2015");
-const track4 = new Track("Blue Monday", "New Order", "NOT ON Power, Corruption & Lies", "1983");
+const track1 = new Track("Redbone", "Childish Gambino", "Awaken, My Love!", "2017", 5);
+const track2 = new Track("Do I Wanna Know", "Arctic Monkeys", "AM", "2013", 3);
+const track3 = new Track("The Less I Know The Better", "Tame Impala", "Currents", "2015", 10);
+const track4 = new Track("Blue Monday", "New Order", "NOT ON Power, Corruption & Lies", "1983", 7);
 
 const Tracks = [
   track1,
@@ -36,6 +38,7 @@ Tracks.map(track => {
   console.log("\nSong: " + track.song);
   console.log("\nArtist: " + track.artist);
   console.log("\nAlbum: " + track.album + ", Year: " + track.year);
+  console.log("\nStar rating: " + track.starReview);
   console.log("----------------------");
 });
 
