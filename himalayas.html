@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>धन्यबाद।</title>
+    <style>
+    img{
+      margin-top: 100px;
+      margin-left: 420px;
+    }
+    h1{
+      margin-left: 500px;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="hover">
+    <img src="assets/swayambhunath_monastery.jpg" alt="swayambhunath">
+    <h1 id="text"></h1>
+    </div>
+
+  </body>
+  <script type="text/javascript">
+
+  document.getElementById("hover").onmouseover = function() {hover()};
+
+  function hover(){
+    document.getElementById("text").innerHTML = "धन्यबाद। The Net Ninja";
+  }
+
+  </script>
+</html>
