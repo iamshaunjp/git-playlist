@@ -10,6 +10,7 @@ console.log("I want to say thank you to all my fans! JK")
 console.log("Very good videos. Good job! :) ~Christoph")
 console.log("The net ninjs, Shaun, the best shinobi, woo");
 console.log("What's up guys, this is my first pull request! Thanks Shaun!");
+console.log("Hey ninjas! Thank you for the tutorials!");
 
 function Track(song, artist, album, year, starReview){
   this.song = song;
