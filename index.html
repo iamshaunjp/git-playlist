@@ -3,17 +3,112 @@
   <head>
     <meta charset="utf-8">
     <title>The NetNinja</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&amp;subset=latin-ext" rel="stylesheet">
+    <style>
+    body {
+      background: rgb(14,18,24);
+      color: #f6f6f6;
+      font-family: 'Roboto Slab', serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .container {
+      margin: 0 auto;
+      max-width: 70rem;
+      padding: 1rem 5rem;
+    }
+    .jumbo {
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 15px 15px 0 15px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 15rem;
+      margin: 8rem auto;
+      padding: 1rem;
+      width: 50rem;
+    }
+    .motto {
+      color: rgb(241,64,32);
+    }
+    .contributions-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+      grid-gap: 10px 15px;
+      list-style: none; 
+    }
+    
+    .contributions-list li a {
+      align-items: center;
+      background: rgb(241,64,32);
+      border-radius: 20px 20px 0 20px;
+      box-sizing: border-box;
+      color: white;
+      display: flex;
+      justify-content: center;
+      height: 10rem;
+      padding: 0.5rem;
+      text-decoration: none;
+      transition: 500ms all ease-in-out;
+      width: 100%;
+    }
+    .contributions-list li a:hover{
+      background: #eee;
+      border-radius: 10px;
+      color: rgb(14,18,24);
+    }
+    </style>
   </head>
   <body>
+  
+  <div class="container">
+    <div class="jumbo">
+      <h1>Git playlist</h1>
+      <p class="motto">Where all the fun is happening</p>
+      <img src="./netninja.png"/>
+    </div>
+  </div>
 
-
-
-
-
-
-
+  <div class="container">
+    <h2>All the awesome contributions</h2>
+    <ul class="contributions-list">
+      <li><a href="./awesome.html">awesome</a></li>
+      <li><a href="./brazil.html">brazil</a></li>
+      <li><a href="./czech_republic.html">czech_republic</a></li>
+      <li><a href="./gradient.html">gradient</a></li>
+      <li><a href="./himalayas.html">himalayas</a></li>
+      <li><a href="./cheeselandUSA.html">cheeselandUSA</a></li>
+      <li><a href="./chile.html">chile</a></li>
+      <li><a href="./india.html">india</a></li>
+      <li><a href="./italy.html">italy</a></li>
+      <li><a href="./legend.html">legend</a></li>
+      <li><a href="./morocco.html">morocco</a></li>
+      <li><a href="./nederland.html">nederland</a></li>
+      <li><a href="./nigeria.html">nigeria</a></li>
+      <li><a href="./ninja.html">ninja</a></li>
+      <li><a href="./ninjaaaa.html">ninjaaaa</a></li>
+      <li><a href="./niteshcontribution.html">niteshcontribution</a></li>
+      <li><a href="./philippines.html">philippines</a></li>
+      <li><a href="./Poland.html">Poland</a></li>
+      <li><a href="./srilanka.html">srilanka</a></li>
+      <li><a href="./test.html">test</a></li>
+      <li><a href="./thanks_a_lot.html">thanks_a_lot</a></li>
+      <li><a href="./thanks.html">thanks</a></li>
+      <li><a href="./uefa.html">uefa</a></li>
+      <li><a href="./uganda.html">uganda</a></li>
+      <li><a href="./usa.html">usa</a></li>
+    </ul>
+  </div>
 <!-- script 2018 -->
-<script src="2018.js">
-</script>
+<script src="2018.js"></script>
+<script src="aloha.js"></script>
+<script src="hello.js"></script>
+<script src="ninja.js"></script>
+<script src="Thanks.js"></script>
   </body>
 </html>
