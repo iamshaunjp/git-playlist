@@ -1,0 +1,23 @@
+{
+  "name": "git-playlist",
+  "version": "1.0.0",
+  "description": "Playground for the Net Ninja Git / GitHub tutorials on YouTube",
+  "main": "main.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranavvidyarthi7/git-playlist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranavvidyarthi7/git-playlist/issues"
+  },
+  "homepage": "https://pranavvidyarthi7.github.io/git-playlist",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
