@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Okay, this should cover us for the next 1000 years...</title>
-    <h3>Thumbs up if you're watching in...</h3>
-    <h4></h4>
-    <ul>
-        <li>Coffee</li>
-        <li>Tea</li>
-        <li>Milk</li>
-      </ul>
+    <title>Open if you are watching in the year:</title>
+    <h1>Okay, this should cover us for the next 1000 years...</h1>
+    <h3>Thumbs up if you're watching in: (Click your year)</h3>
 </head>
-<body>
-<script type="javascript">
-//https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement
-let numbers = []
-for(i=2020;i<=3020;i++){
-  numbers.push(i);
+<body onload="printlist()">
+<ul id = "lista" style="list-style-type:none">
+<!--FUNCTION WILL PRINT HERE-->
+</ul>
+<script>
+  function printlist(){
+  let lista = document.getElementById('lista');
+
+    for(i=2020;i<=3020;i++){
+      let temp = document.createElement("li");
+      temp.innerText = i;
+      lista.appendChild(temp)
+      let addonclick = document.createAttribute(onclick);
+      addonclick.value = '"' + 'checkdate(' + i + ')' + '"'
+      console.log(addonclick.value)
+      temp.setAttributeNode(addonclick);
+    }
 }
-console.log(numbers)
+
 </script>
 </body>
 </html>
