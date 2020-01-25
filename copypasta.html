@@ -18,12 +18,18 @@
     for(i=2020;i<=3020;i++){
       let temp = document.createElement("li");
       temp.innerText = i;
-      lista.appendChild(temp)
-      let addonclick = document.createAttribute(onclick);
-      addonclick.value = '"' + 'checkdate(' + i + ')' + '"'
-      console.log(addonclick.value)
+      let addonclick = document.createAttribute('onclick');
       temp.setAttributeNode(addonclick);
+      addonclick.value = 'checkdate(' + i + ')'
+      lista.appendChild(temp)
     }
+
+}
+
+function checkdate(date){ 
+  if(new Date().getFullYear() != date){
+    alert(haha that is no)
+  }
 }
 
 </script>
