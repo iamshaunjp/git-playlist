@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open if you are watching in the year:</title>
     <h1>Okay, this should cover us for the next 1000 years...</h1>
-    <h3>Thumbs up if you're watching in: (Click your year)</h3>
+    <h3 id = "the_year">Thumbs up if you're watching in: (double click your year to see magic)</h3>
 </head>
 <body onload="printlist()">
 <ul id = "lista" style="list-style-type:none">
@@ -23,13 +23,14 @@
       addonclick.value = 'checkdate(' + i + ')'
       lista.appendChild(temp)
     }
-
 }
 
 function checkdate(date){ 
   if(new Date().getFullYear() != date){
-    alert(haha that is no)
-  }
+    alert("haha that is not your year")
+  }else{alert("thanks for the like")
+    document.getElementById('the_year').innerHTML = "Thumbs up if you're watching in: " + date;    
+    }
 }
 
 </script>
