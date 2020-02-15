@@ -1,1 +1,1 @@
-console.log("hi shaun this ia a nice idea thanks ")
+console.log("hi shaun this is a nice idea thanks ")
