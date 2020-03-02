@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open if you are watching in the year:</title>
+    <h1>Okay, this should cover us for the next 1000 years...</h1>
+    <h3 id = "the_year">Thumbs up if you're watching in: (double click your year to see magic)</h3>
+</head>
+<body onload="printlist()">
+<ul id = "lista" style="list-style-type:none">
+<!--FUNCTION WILL PRINT HERE-->
+</ul>
+<script>
+  function printlist(){
+  let lista = document.getElementById('lista');
+
+    for(i=2020;i<=3020;i++){
+      let temp = document.createElement("li");
+      temp.innerText = i;
+      let addonclick = document.createAttribute('onclick');
+      temp.setAttributeNode(addonclick);
+      addonclick.value = 'checkdate(' + i + ')'
+      lista.appendChild(temp)
+    }
+}
+
+function checkdate(date){ 
+  if(new Date().getFullYear() != date){
+    alert("haha that is not your year")
+  }else{alert("thanks for the like")
+    document.getElementById('the_year').innerHTML = "Thumbs up if you're watching in: " + date;    
+    }
+}
+
+</script>
+</body>
+</html>
