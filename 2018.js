@@ -2,8 +2,10 @@
 let _2018viewers = [
   {
     "ninjas": [
-        "Anthonylan"
-        "Shoaib"
+        "Anthonylan",
+        "Shoaib",
+        // i watched it in 2020, a little bit late to the party
+        "The A_D "
 
     ]
   }
