@@ -1,0 +1,39 @@
+<!-- 
+    Wanted to give credits to https://codepen.io/yshlin/pen/ylDEk
+    who made this amazing pyro show
+
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="click_me.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <button class='btn'>Click me</button>
+    </div>
+    <div class="pyro">
+        <div class="before"></div>
+        <div class="after"></div>
+    </div>
+
+    <script>
+        var pyro = document.querySelector('.pyro');
+        var btn = document.querySelector('.btn');
+        pyro.style.opacity=0;
+        btn.addEventListener('click', function() {
+            console.log("test");
+            pyro.style.opacity = 1;
+            div = btn.parentNode;
+            div.removeChild(btn);
+            div.parentNode.removeChild(div);
+            
+        });
+
+    </script>
+</body>
+</html>
