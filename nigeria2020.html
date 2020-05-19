@@ -1,0 +1,187 @@
+<!DOCTYPE ="html" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zak 4 Shaun 2020</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Trebuchet MS';
+        line-height: 1.6;
+        background: #6b849b;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      ul li {
+        padding: 5px;
+        background: #f4f4f4;
+        margin: 5px 0;
+      }
+
+      header {
+        background: #000;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      .container {
+        margin: auto;
+        width: 500px;
+        overflow: auto;
+        padding: 3rem 2rem;
+      }
+
+      #my-form {
+        padding: 2rem;
+        background: #f4f4f4;
+        border-radius: 5px;
+      }
+
+      #my-form label {
+        display: block;
+      }
+
+      #my-form input[type='text'] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      #my-form input[type='email'] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        border: 0;
+        background: #333;
+        color: #fff;
+        border-radius: 5px;
+        margin: 5px 0;
+        cursor: pointer;
+        letter-spacing: 4px;
+      }
+
+      .btn:hover {
+        background: #444;
+      }
+
+      .bg-dark {
+        background: #333;
+        color: #fff;
+      }
+
+      .error {
+        background: orangered;
+        color: #fff;
+        padding: 5px;
+        margin: 5px;
+      }
+
+      button {
+        display: inline-block;
+        padding: 7px;
+        border: 2px solid #333;
+        border-radius: 5px;
+        margin-top: 30px;
+        cursor: pointer;
+        background: transparent;
+        color: #0ae916;
+        font-size: 0.95rem;
+        letter-spacing: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Appreciation from Zak Nigeria</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Add USer</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Shaun Pelling" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="bestdev@ninjawarlord.co.uk"
+            required
+          />
+        </div>
+        <input class="btn" type="submit" value="Submit" />
+      </form>
+
+      <ul id="users"></ul>
+      <button>Change <span style="color: aqua;">bgColor</span></button>
+    </section>
+
+    <script>
+      const myForm = document.querySelector('#my-form');
+      const nameInput = document.querySelector('#name');
+      const emailInput = document.querySelector('#email');
+      const msg = document.querySelector('.msg');
+      const userList = document.querySelector('#users');
+
+      myForm.addEventListener('submit', onSubmit);
+
+      function onSubmit(e) {
+        e.preventDefault();
+
+        if (nameInput.value === '' || emailInput.value === '') {
+          msg.classList.add('error');
+          msg.innerHTML = 'Please enter all fields';
+
+          setTimeout(() => msg.remove(), 3000);
+        } else {
+          const li = document.createElement('li');
+          li.appendChild(
+            document.createTextNode(`${nameInput.value} : ${emailInput.value}`)
+          );
+
+          userList.appendChild(li);
+
+          // Clear fields
+          nameInput.value = '';
+          emailInput.value = '';
+        }
+      }
+
+      //  BGR change button
+
+      const btn = document.querySelector('button');
+
+      const random = function (number) {
+        return Math.floor(Math.random() * (number + 1));
+      };
+
+      btn.onclick = function () {
+        const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+
+        document.body.style.backgroundColor = rndCol;
+      };
+    </script>
+  </body>
+</html>
