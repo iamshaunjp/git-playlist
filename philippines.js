@@ -1,0 +1,1 @@
+const thanks = 'Thank you shaun!';
