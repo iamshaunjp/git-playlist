@@ -13,6 +13,7 @@ console.log("What's up guys, this is my first pull request! Thanks Shaun!");
 console.log("Great tutorial, Thanks a lot! msamancioglu");
 console.log("Hey Shaun! I really like the tutorial, thanks alot. anthonylan");
 console.log("Thank you");
+console.log("Thank you so much for helping me understand GIT i really appreciate your effort and knowledge. God Bless You");
 
 function Track(song, artist, album, year, starReview){
   this.song = song;
