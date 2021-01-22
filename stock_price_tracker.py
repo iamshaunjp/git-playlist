@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from win10toast import ToastNotifier
 
-#for noticing stock is down
+# For noticing stock is down
 toaster = ToastNotifier() 
 
 tickers = ['NFLX', 'AMZN', 'FB', 'GOOG', 'BRK-B', 'TSLA']
