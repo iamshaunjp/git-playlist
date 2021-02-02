@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chadere Nyosky</title>
+        <script src="vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <p>{{ sayHello() }}</p>
+        </div>
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    title: "Hello World From Chadere Oghenenyoreme"
+                },
+                methods: {
+                    sayHello() {
+                        return this.title;
+                    }
+
+                }
+            })
+        </script>
+    </body>
+</html>
