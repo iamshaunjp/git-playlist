@@ -1,0 +1,51 @@
+section {
+    width: 500px;
+    height: 300px;
+    border: 1px solid grey;
+    overflow: hidden;
+    background-color: lightgray;
+  }
+  .green {
+    background-color: green;
+    width: 180px;
+    height: 90px;
+    position: absolute;
+    justify-content: center;
+    justify-items: center;
+    top: 60px;
+    left: 150px;
+  }
+  .red {
+    width: 80px;
+    background-color: red;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    top: 5px;
+    left: 50px;
+  }
+  .brown {
+    width: 10px;
+    height: 220px;
+    background-color: brown;
+    position: relative;
+    top: 47px;
+    left: 132px;
+    border-radius: 5px;
+  }
+  .base {
+    width: 280px;
+    height: 40px;
+    background-color: #8b572a;
+    position: relative;
+    top: 18px;
+    left: 10px;
+  }
+  .base p {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    postion: relative;
+    padding: 5px;
+  }
+  
