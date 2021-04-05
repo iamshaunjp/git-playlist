@@ -2,9 +2,8 @@
 let _2018viewers = [
   {
     "ninjas": [
-        "Anthonylan"
-        "Shoaib"
-
+      "Anthonylan",
+      "Shoaib"
     ]
   }
 ]
