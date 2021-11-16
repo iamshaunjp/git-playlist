@@ -1,0 +1,51 @@
+/* .error {
+  color: red;
+}
+p.success {
+  color: #199b19;
+}
+p.success.feedback {
+  border: 2px solid red;
+}
+#content {
+  background-color: lightgrey;
+  padding: 20px;
+} */
+/* div p {
+  parent on the left side & the child which we want to target is on the right side
+  color: violet;
+}
+div .error {
+  if there is no space betweem the div and .error then it means to target all the div tags with class error, so for targetting a child of a parent there should be a space between them
+  color: red;
+} */
+/* a[href] {
+  selects all anchor tags with the attribute href, we can also provide values for the attributes if we want to particularly target any specific anchor tags with specific value for href
+  background-color: lightgreen;
+} */
+a[href*="sharonz"] {
+  /* using amstring it specifies that any part of the anchor tag which contains this specific value for the href will be targeted */
+  background-color: grey;
+  color: blue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+a[href$=".com"] {
+  /* the dollar sign is used to specify that the particular href value should end with .com */
+  color: yellow;
+  background: red;
+  border: 2px dashed blue;
+}
+div {
+  color: crimson;
+  border: 2px dashed grey;
+  margin: 20px;
+  font-weight: bold;
+}
+div p {
+  color: orange;
+  margin: inherit;
+  border: inherit;
+  /* the margin and border of the parent child is inherited */
+}
