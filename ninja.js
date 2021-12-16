@@ -13,6 +13,7 @@ console.log("What's up guys, this is my first pull request! Thanks Shaun!");
 console.log("Great tutorial, Thanks a lot! msamancioglu");
 console.log("Hey Shaun! I really like the tutorial, thanks alot. anthonylan");
 console.log("Thank you");
+console.log("Cheers for the tutorial, watching late 2021");
 
 function Track(song, artist, album, year, starReview){
   this.song = song;
@@ -52,7 +53,7 @@ console.log('%cFork it on GitHub: https://github.com/iamshaunjp/git-playlist.git
 console.log(`%cThis is the best youtube channel` , 'background-color : blue; color : white;');
 
 function thanks(){
-  var div = document.getElementById('div01');
+  let div = document.getElementById('div01');
   if (div.style.display == "none")
     {div.style.display = "block"}
   else {div.style.display = "none"};
