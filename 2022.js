@@ -1,0 +1,1 @@
+console.log("Thank you for your tutorials , i've improved a lot since i started watching them.You're a rare Gem and happy 2022 :)");
