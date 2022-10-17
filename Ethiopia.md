@@ -5,6 +5,6 @@
     <title>Message</title>
   </head>
   <body>
-    <h1>Great Tutorial,Thumbsup</p>
+    <h1>Great Tutorial,Tankyou</p>
   </body>
 </html>
