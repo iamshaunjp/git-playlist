@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>From Nigeria</title>
     <style>
-        body {
-            background: rgb(143, 161, 194);
-        }
-        h1 {
-            font-size: 60px
+      body {
+        background: rgb(143, 161, 194);
+      }
+      h1 {
+        font-size: 60px;
+      }
+
+      p {
+        font-size: 30px;
+      }
+      .center {
+        text-align: center;
+      }
+      .turn {
+        width: 100px;
+        height: 100px;
+        /* background: black; */
+        border-radius: 50%;
+        border-left: 6px solid rgb(128, 0, 0);
+        border-right: 6px solid rgb(223, 132, 14);
+        border-top: 6px solid green;
+        border-bottom: 6px solid rgb(20, 106, 153);
+        animation-name: turn;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        margin: 10px auto;
+      }
+      @keyframes turn {
+        0% {
+          transform: rotate(0deg);
         }
 
-        p {
-            font-size: 30px
+        100% {
+          transform: rotate(360deg);
         }
-        .center {
-            text-align: center
-        }
-        .turn {
-            width: 100px;
-            height: 100px;
-            /* background: black; */
-            border-radius: 50%;
-            border-left: 6px solid rgb(128, 0, 0);
-            border-right: 6px solid rgb(223, 132, 14);
-            border-top: 6px solid green;
-            border-bottom: 6px solid rgb(20, 106, 153);
-            animation-name: turn;
-            animation-direction: alternate-reverse;
-            animation-iteration-count: infinite;
-            animation-duration: 3s;
-            margin: 10px auto
-        }
-        @keyframes turn{
-            0%{
-                transform: rotate(0deg);
-            }
-
-            100%{
-                transform: rotate(360deg);
-            }
-        }
+      }
     </style>
-</head>
-<body>
-    
-    <h1 class="center">FROM NIGERIA</h1>   
+  </head>
+  <body>
+    <h1 class="center">FROM NIGERIA</h1>
 
     <p class="center">Thank tou very much from <Nigeria></Nigeria></p>
-    <hr>
+    <hr />
 
-    <div class="turn">
-        
-    </div>
-
-</body>
+    <div class="turn"></div>
+    <h1>Thanks for making me understand Git and Github!. From Nigeria</h1>
+  </body>
 </html>
