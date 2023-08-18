@@ -1,7 +1,7 @@
 ﻿console.log("hi this is nice tutorial....");
 console.log('do your worst');
-console.log( 'first! great tutorial!' );
-console.log( "I'll be a hardcore programmer!!! Thanks Shaun! From PeterAMD" );
+console.log('first! great tutorial!');
+console.log("I'll be a hardcore programmer!!! Thanks Shaun! From PeterAMD");
 console.log("Amazing tutorial! Love from Turkey,AnılSansak was here");
 console.log('Indeed. Great tutorial as always! Thanks Shaun, from Pieter.');
 console.log("Thanks for NetNinja's tutorials! Thanks from BaalWu in Taiwan");
@@ -14,9 +14,9 @@ console.log("Great tutorial, Thanks a lot! msamancioglu");
 console.log("Hey Shaun! I really like the tutorial, thanks alot. anthonylan");
 console.log("Thank you");
 
-function Track(song, artist, album, year, starReview){
+function Track(song, artist, album, year, starReview) {
   this.song = song;
-  this. artist = artist;
+  this.artist = artist;
   this.album = album;
   this.year = year;
   this.starReview = starReview;
@@ -49,12 +49,12 @@ Tracks.map(track => {
 
 console.log('%cDo your worst!\n', 'background: red; color: white; display: block; padding: 3px;');
 console.log('%cFork it on GitHub: https://github.com/iamshaunjp/git-playlist.git', 'background: #0057A0; color: white; display: block; padding: 3px;');
-console.log(`%cThis is the best youtube channel` , 'background-color : blue; color : white;');
+console.log(`%cThis is the best youtube channel`, 'background-color : blue; color : white;');
 
-function thanks(){
+function thanks() {
   var div = document.getElementById('div01');
-  if (div.style.display == "none")
-    {div.style.display = "block"}
-  else {div.style.display = "none"};
+  if (div.style.display == "none") { div.style.display = "block" }
+  else { div.style.display = "none" };
 }
 button01.addEventListener('click', thanks);
+console.log('your crap website is now awesome')
