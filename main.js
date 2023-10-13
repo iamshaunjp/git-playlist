@@ -1,2 +1,2 @@
 alert('hi');
-console.log("I forkrd it uhoooo")
+console.log("I forked it uhoooo");
