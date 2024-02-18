@@ -1,20 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Thank you</title>
-  </head>
-<p>I learnt all the github concepts through your tutorial,thanks a lot.</p>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>THanKs ShAuN</title>
 
+    <style>
 
+        #app {
+            margin: 30px auto;
+            max-width: 70%;
+        }
 
+        section {
+            display: flex;
+        }
 
+        #title{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+        }
 
+        #message {
+            padding: 5px;
+            text-align: center;
+            width: 100%;
+        }
 
+        #message p{
+            font-size: 2em;
+        }
 
-<!-- script 2018 -->
-<script src="2018.js">
+        #message span{
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <div id="title"> NET NINJA</div>
+
+        <section>
+            <aside>
+                <img src="assets/thanks.png" alt="">
+            </aside>
+            <div id="message">
+                <p>Thanks for the tutorials, it really helped my skills, I have learnt alot from you. Thank yo, God Bless.</p>
+                <span>Balogun Kayode,</span> <span>Lagos Nigeria</span>
+            </div>
+        </section>
+    </div>
+</body>
+
+<script>
+    const app = document.getElementById("app");
+    const fonts = ["cursive", 'Georgia', 'Garamond', "Times New Roman", "cursive", 'Chalkboard', "Comic Sans", "sans-serif"]
+
+    let count = 0 ;
+
+    setInterval(function () {
+        console.log(count)
+        app.style.fontFamily = fonts[count%7]
+        count += 1;
+    }, 2000)
+
 </script>
-  </body>
+
 </html>
