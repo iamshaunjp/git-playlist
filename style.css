@@ -1,0 +1,30 @@
+
+
+#hello__intro {
+  background: red;
+  padding: 39px;
+  margin: 170px;
+  border: 1px solid powderblue;
+}
+
+.heading__tertiary {
+  color: chocolate;
+  font-size: 28px;
+}
+
+h3{
+
+    color: blue;
+    font-family: verdana;
+    font-size: 300%;
+}
+
+h1{
+  color: red;
+}
+
+.grad {
+	height: 500px;
+	width: 100%;
+	background: linear-gradient(to right, red, orange, green, cyan, blue, indigo, violet);
+}
