@@ -22,6 +22,14 @@ Switch to a a previous commit to review code from that checkpoint
 
     # git checkout <your-commit address-here>
 
+Undo a previous commit
+
+    # git revert <your-commit address-here>
+
+Reset the repository back to a previous commit
+
+    # git reset <your-commit address-here>
+
 Sync a remote repository to local repository with automatic alias assigned called "origin"
 
     # git remote add <alias-name> <your remote repository link comes here>
