@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MESSEGE FROM NEPAL</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        .custom-height{
+            height: 100vh;
+        }
+
+/*Font*/        
+.fira-code {
+    font-family: "Fira Code", monospace;
+    font-style: normal;
+  }
+
+  /* Circle styles */
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition:  ease-in-out;
+
+  }
+    </style>
+  </head>
+
+  <body class="custom-height bg-dark">
+    <div class="container d-flex justify-content-center align-items-center h-100 ">
+        <h1 class="fira-code text-success">Hey Shaun, Thank you for your git tutorial it was helpful!</h1>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        //creates a circle
+        function addRandomCircle(count){
+            for(let i=0; i<count; i++){
+                let circle = document.createElement("div"); //creates a div
+
+                circle.classList.add("circle");
+                let size = Math.floor(Math.random()*5 +10); //random sizes
+                
+                circle.style.width = `${size}px`;
+                circle.style.height = `${size}px`;
+                
+                 
+
+                document.body.appendChild(circle); //add the circle to documnet
+                moveCircle(circle); //calls the moveCircle method
+                console.log("added")
+            }
+        }
+
+        function moveCircle(circle){
+
+            const randPosition = ()=>{ //annonymous arrow method for setting to move the circle in different position
+             let pX = Math.random() * (window.innerWidth - circle.clientWidth);
+             let pY = Math.random() * (window.innerHeight - circle.clientHeight);
+             circle.style.left = `${pX}px`; 
+            circle.style.top = `${pY}px`;
+            }
+
+             randPosition();
+            setInterval(randPosition,3000); //change position every 3sec
+        }
+        addRandomCircle(30);
+    </script>
+  </body>
+</html>
