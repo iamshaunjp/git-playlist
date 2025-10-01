@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
         body {
             background: rgb(143, 161, 194);
         }
+
         h1 {
             font-size: 60px
         }
@@ -16,9 +18,11 @@
         p {
             font-size: 30px
         }
+
         .center {
             text-align: center
         }
+
         .turn {
             width: 100px;
             height: 100px;
@@ -34,27 +38,69 @@
             animation-duration: 3s;
             margin: 10px auto
         }
-        @keyframes turn{
-            0%{
+
+        @keyframes turn {
+            0% {
                 transform: rotate(0deg);
             }
 
-            100%{
+            100% {
                 transform: rotate(360deg);
+            }
+        }
+
+        .nigerian-flag {
+            display: flex;
+            border-radius: 1rem;
+            overflow: hidden;
+            width: fit-content;
+            margin: 2rem auto;
+            position: relative;
+            top: 0;
+            transform: scale(1);
+            animation: float 1s ease-in-out alternate infinite;
+        }
+
+        .nigerian-flag * {
+            width: 100px;
+            height: 200px;
+        }
+
+        .nigerian-flag .green {
+            background-color: #008000;
+        }
+
+        .nigerian-flag .white {
+            background-color: #fff;
+        }
+
+        @keyframes float {
+            to {
+                top: 1rem;
+                transform: scale(.95);
             }
         }
     </style>
 </head>
-<body>
-    
-    <h1 class="center">FROM NIGERIA</h1>   
 
-    <p class="center">Thank tou very much from <Nigeria></Nigeria></p>
+<body>
+
+    <h1 class="center">FROM NIGERIA</h1>
+
+    <p class="center">Thank tou very much from <Nigeria></Nigeria>
+    </p>
     <hr>
 
     <div class="turn">
-        
-    </div>
 
+    </div>
+    <hr>
+
+    <div class="nigerian-flag">
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+    </div>
 </body>
+
 </html>
