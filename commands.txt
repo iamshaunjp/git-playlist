@@ -1,0 +1,58 @@
+git --version  #check version
+git config --global user.name <username> #set username
+git config --global user.email <email> #set email
+git config user.name #check username
+
+#go inside project folder
+git init #creates git file
+
+#green color -> git is tracking the file and it is not committed + its a new file
+#orange color -> git is tracking the file and it is not committed + its an existing file
+
+git status #shows modified file and files in staging area
+git add <modified_file> #add file into staging area
+git add . #add all modified files to staging area
+git rm --cached <staged_file> #removes file from staging area
+
+git commit -m "<message>" #making commit
+
+git log #shows commit history and commit id
+git log --oneline #shows commit history and commit id in simplified manner
+
+git checkout <commit id> #displays read only version of commit id
+git checkout master #goes back to present
+
+git revert <commit id> #new commit which undoes the specified commit 
+#this opens a text editor
+# :wq should be entered at the bottom to close it
+
+git reset <commit id> #resets all the commit after the specified commit but locally saved
+git reset <commit id> --hard #resets and deletes files permanently
+
+git branch <branch_name> #creating branch
+git branch -a #shows all existing branches
+git checkout <branch_name> #switch to specified branch
+git checkout -b <branch_name> #creates and switches to new branch in single step
+
+git branch -D <branch_name> #to delete a branch from master
+
+git merge <branch_name> #to merge a branch from location to be merged into
+
+git push <url> <branch> #to push code from local repo to remote repo
+
+git remote add <alias> <url> #to give an alias(deafult : origin) to the url of remote repo
+
+git clone <url> #to clone remote repo into local repo
+
+git pull <alias> <branch> #to fetch all the remote repo code and merge with local repo code
+
+#Workflow
+git pull origin master
+create,edit,update,....
+git add .
+git commit
+git push origin branch(not master)
+compare & pull request in GitHub
+create pull request in GitHub
+wait for review
+merge pull requests
