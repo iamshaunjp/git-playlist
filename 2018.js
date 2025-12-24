@@ -14,3 +14,5 @@ _2018viewers.forEach(viewers => {
   console.log(viewers.ninjas);
 }
 )
+let mySpace = getElementsByClassName('mySpace');
+console.log(mySpace);
