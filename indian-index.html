@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Indian Design</title>
+    <style>
+        /* General Reset */
+        body, h1, h2, h3, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #ff7e5f, #feb47b);
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #ff5722;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff5722;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 80vh;
+            color: white;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero .btn {
+            margin-top: 2rem;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            background: #ff5722;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background: #e64a19;
+        }
+
+        section {
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        section h3 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 0 2rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .card h4 {
+            color: #ff5722;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modern India</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to the Future of India</h2>
+        <p>Discover the vibrant culture, rich history, and dynamic innovations that make India truly incredible.</p>
+        <button class="btn">Explore More</button>
+    </div>
+
+    <section>
+        <h3>Our Highlights</h3>
+        <div class="cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/250" alt="Culture">
+                <h4>Culture</h4>
+                <p>Immerse yourself in India's diverse and colorful heritage.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250" alt="Innovation">
+                <h4>Innovation</h4>
+                <p>Witness the cutting-edge technologies shaping India's future.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/250" alt="Nature">
+                <h4>Nature</h4>
+                <p>Explore the breathtaking landscapes across the nation.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Modern India. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
