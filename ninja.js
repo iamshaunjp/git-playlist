@@ -12,6 +12,7 @@ console.log("The net ninjs, Shaun, the best shinobi, woo");
 console.log("What's up guys, this is my first pull request! Thanks Shaun!");
 console.log("Great tutorial, Thanks a lot! msamancioglu");
 console.log("Hey Shaun! I really like the tutorial, thanks alot. anthonylan");
+console.log("GREAT tutorial Shaun!");
 console.log("Thank you");
 
 function Track(song, artist, album, year, starReview){
