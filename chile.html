@@ -1,15 +1,89 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/47585eb66d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>¡HOlA MUNDO CRUEL!</title>
   </head>
-  <body>
-    <h3>¿Quién es Chile? </h3>
-    <h1>¡COLO-COLO!</h1>
-    <h2>English is better than chinese man!!!</h2>
-    <h2>Cihan Ukan</h2>
-    <h2>You Know What??? Shawn is AWESOME!!!!!!!!!!!Yeahhhhhhhhhhhhhh</h2>
-    <h4>i agree with you 100%%% !!!!!</h4>
+  <body id="home" class="scrollspy">
+    <div class="navbar-fixed">
+      <nav class="orange lighten-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#home" class="brand-logo">Chile Fest</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse">
+              <i class="material-icons">sports_soccer</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#search">Chile the Country</a></li>
+              <li><a href="#popular">Chili the food</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- put sidebar nav here to make it work properly -->
+    <ul class="side-nav" id="mobile-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#search">Search</a></li>
+      <li><a href="#popular">Popular Places</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <h3 class="center">¿Quién es Chile?</h3>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2 class="center">
+      You Know What??? Shawn is AWESOME!!!!!!!!!!!Yeahhhhhhhhhhhhhh
+    </h2>
+    <h4 class="center">i agree with you 100%%% !!!!!</h4>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h2 class="center">
+      You Know What??? Chile is AWESOME!!!!!!!!!!!Yeahhhhhhhhhhhhhh
+    </h2>
+    <h4 class="center">i agree with you 100%%% !!!!!</h4>
+
+    <footer class="section orange lighten-3 white-text center">
+      <p class="flow-text">Chili &copy; 2020</p>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Custom JS & jQuery here
+        //InIT Sidenav
+        $('.button-collapse').sideNav();
+      });
+    </script>
   </body>
 </html>
