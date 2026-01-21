@@ -37,6 +37,7 @@ Pull from remote branch "origin" down to local branch "master"
 Create a new branch to manage a side hustle in project
 
     # git branch <your new branch name>
+	# git -b <your new branch name>
 
 View all branches in your repository, also marks the branch you are working on with *
 
