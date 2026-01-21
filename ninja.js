@@ -13,6 +13,7 @@ console.log("What's up guys, this is my first pull request! Thanks Shaun!");
 console.log("Great tutorial, Thanks a lot! msamancioglu");
 console.log("Hey Shaun! I really like the tutorial, thanks alot. anthonylan");
 console.log("Thank you");
+console.log("Josh says thank you");
 
 function Track(song, artist, album, year, starReview){
   this.song = song;
@@ -28,6 +29,7 @@ const track1 = new Track("Redbone", "Childish Gambino", "Awaken, My Love!", "201
 const track2 = new Track("Do I Wanna Know", "Arctic Monkeys", "AM", "2013", 3);
 const track3 = new Track("The Less I Know The Better", "Tame Impala", "Currents", "2015", 10);
 const track4 = new Track("Blue Monday", "New Order", "NOT ON Power, Corruption & Lies", "1983", 7);
+const track5 = new Track("On the low", "Excellent", "On the low", "2018", 5);
 
 const Tracks = [
   track1,
@@ -36,6 +38,8 @@ const Tracks = [
   track4
 ];
 
+console.log("Popular Tracks");
+
 Tracks.map(track => {
   console.log("----------------------");
   console.log("\nSong: " + track.song);
@@ -43,7 +47,9 @@ Tracks.map(track => {
   console.log("\nAlbum: " + track.album + ", Year: " + track.year);
   console.log("\nStar rating: " + track.starReview);
   console.log("----------------------");
+}
 });
+const ninjas = ['shaun', 'ryu', 'chun-li', 'yoshi'];
 
 // Ninjas are cool and awesome!
 
@@ -56,5 +62,10 @@ function thanks(){
   if (div.style.display == "none")
     {div.style.display = "block"}
   else {div.style.display = "none"};
+  var button01 = document.getElementById('button01');
+  if (button01.innerHTML == "Thanks Shaun!")
+    {button01.innerHTML = "Thanks for the tutorial!"}
+  else {button01.innerHTML = "Thanks Shaun!"};
 }
 button01.addEventListener('click', thanks);
+document.getElementById("button01").addEventListener("click", thanks);
