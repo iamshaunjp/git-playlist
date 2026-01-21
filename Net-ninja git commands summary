@@ -1,0 +1,32 @@
+git --version 
+git config --global user.name hefkay
+git config --global user.email hefkay
+git config user.name or email
+cd .. would move out of current folder
+ls or dir would list out everything in the folder
+mkdir new directory 
+rm is to remove file 
+rmdir is to remove directory
+touch filename to create a new file
+git init initializes a new empty .git folder
+git status shows changed files and files in staging area
+git add filename to add files to staging area 
+git add . to add all files to staging area 
+git rm -- cached filename to unstage 
+git commit -m "message"
+git log show the commit history, git log --oneline to compress commit history
+git reflog shows all recent activity
+checkout commit, reverse commit, reset commit 
+git checkout uniqueID to see a previous commit, git checkout master to return back 
+The git revert and reset are used in the same way. reset --hard would permanently delete files, revert just creates an opposite of 
+the particular commit and reset would maintain the code structure but delete the commits.
+git branch branchname creates a new branch. git branch -a lists the branches present.
+git checkout branchname, checks out to a new branch. or git checkout -b branchname.
+git branch -D branchname deletes unmerged branches. (-d for merged branches)
+git merge branchname merges the branches 
+git push githubURL branchname/master to push to github 
+git remote add origin GithubURL to create shortcut i.e git push origin branchname/master
+git clone GithubUrl to clone a repository
+git remote -v to get origin status 
+git pull origin master - pulls and merges code into the master 
+YOU FORK FOR OPEN SOURCE CONTRIBUTION, THEN CREATE A PULL REQUEST
