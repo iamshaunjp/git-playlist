@@ -28,3 +28,99 @@ h1{
 	width: 100%;
 	background: linear-gradient(to right, red, orange, green, cyan, blue, indigo, violet);
 }
+
+/* * {
+    outline: 1px solid red !important;
+ } */
+
+ h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 400%;
+    text-align: center;
+ }
+
+ .navigations {
+     list-style: none;
+     display: flex;
+     justify-content: space-around;
+     font-family: Arial, Helvetica, sans-serif;
+     padding: 0% 22%;
+ }
+
+ .direction {
+     text-decoration: none;
+     font-weight: 900;
+     color: rgba(40,26,23,.3);
+ }
+
+ h2 {
+     text-align: center;
+     font-family: Arial, Helvetica, sans-serif;
+     margin: 4% auto 1%;
+ }
+
+ p{
+     padding: 1% 17%;
+     font-family: Arial, Helvetica, sans-serif;
+     color: rgba(40,26,23,.6);
+     line-height: 150%;
+     letter-spacing: .1em;
+ }
+
+ .external-links {
+     text-decoration: none;
+     font-weight: bold;
+     font-family: Arial, Helvetica, sans-serif;
+     color: rgba(40,26,23,.7);
+ }
+
+.recommendations {
+    padding: 1% 20%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(40,26,23,.6);
+    line-height: 150%;
+    letter-spacing: .1em;
+}
+
+ .travel-pic {
+     display: flex;
+     justify-content: center;
+     padding: 1% 10%;
+ }
+
+ .resizing-pic {
+     width: 40%;
+     height: 80%;
+ }
+
+ .list {
+     padding: 1%;
+ }
+
+ .social-media {
+     display: flex;
+     justify-content: center;
+ }
+
+.logos {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(7, 7, 7, 0.6);
+    line-height: 150%;
+    letter-spacing: .1em;
+    width: 25%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 3% 0% 1%;
+}
+
+ .ins-logo {
+    width: 10%;
+    height: auto;
+ }
+
+ .yt-logo {
+     width: 25%;
+     height: auto;
+ }
