@@ -11,6 +11,8 @@
   c. Git push handleName branch.
 9. Git branch
 10. Git branch newFeature
+12. To work on a feature in a hidden/latent manner that may be later on integrated with the application
+use the git stash command
 11. Git checkout newfeature
 12. Git -rm --cached index.html
 13. Git log
@@ -39,5 +41,5 @@
     ii. Create  a compare and pull request : leave comments
     iii. Create pull request
     iv. Assign reviewer
-    v. Review will review you code and will do merge
+    v. Reviewer will review you code and will do merge
 You can delete branch later on if you want
